@@ -17,11 +17,11 @@ public:
 		std::copy(lst.begin(), lst.end(), elem);
 	}
     ~Vector() { delete[] elem; }
-	double& Vector::operator[](int i){
+	double& operator[](int i){
 		return elem[i];
 	}
 
-	int Vector::size() const{
+	int size() const{
 		return  sz;
 	}
 };
