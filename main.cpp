@@ -26,15 +26,15 @@ void readKey(){
 
 typedef void(*Func)(void);
 Func getFuncAtPos(Base &b, int pos){
-	return (Func)*((int*)*(int*)(&b) + pos);
+	return (Func)*((long*)*(long*)(&b) + pos);
 }
 
 void virtualFuncCall(){
 	Child child;
 	cout << "Instance Base Address:" << (&child) << endl;
-	cout << "Virtual Functions Table Address:" << (int*)(&child) << endl;
-	cout << "Virutal Functions Table's First Function Address:" << (int*)*(int*)(&child) << endl;
-	Func pFunc = NULL;
+	cout << "Virtual Functions Table Address:" << (long*)(&child) << endl;
+	cout << "Virutal Functions Table's First Function Address:" << (long*)*(long*)(&child) << endl;
+	Func pFunc = nullptr;
 	for (int i = 0; i < 3; ++i){
 		pFunc = getFuncAtPos(child, i);
 		pFunc();
