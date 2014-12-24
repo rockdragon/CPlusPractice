@@ -79,11 +79,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Child.cpp" />
     <ClCompile Include="Container.cpp" />
+    <ClCompile Include="List_container.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Base.h" />
+    <ClInclude Include="Child.h" />
     <ClInclude Include="Container.h" />
+    <ClInclude Include="List_container.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="Vector_Container.h" />
   </ItemGroup>
