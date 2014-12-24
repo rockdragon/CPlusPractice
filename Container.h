@@ -1,3 +1,5 @@
+#pragma once
+
 class Container {
 public:
     virtual double& operator[](int) = 0; // pure virtual function
