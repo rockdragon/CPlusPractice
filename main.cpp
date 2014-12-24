@@ -31,11 +31,16 @@ Func getFuncAtPos(Base &b, int pos){
 
 void virtualFuncCall(){
 	Child child;
+	cout << "Instance Base Address:" << (&child) << endl;
+	cout << "Virtual Functions Table Address:" << (int*)(&child) << endl;
+	cout << "Virutal Functions Table's First Function Address:" << (int*)*(int*)(&child) << endl;
 	Func pFunc = NULL;
 	for (int i = 0; i < 3; ++i){
 		pFunc = getFuncAtPos(child, i);
 		pFunc();
 	}
+	Base *b = &child;
+	b->w();
 }
 
 int main() {
