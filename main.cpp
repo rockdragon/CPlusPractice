@@ -43,8 +43,17 @@ void virtualFuncCall(){
 	b->w();
 }
 
+void dynamicCall(){
+	Child child;
+	Base *b = &child;
+
+	(dynamic_cast<Child&>(*b)).f();
+}
+
 int main() {
-	virtualFuncCall();
+	//virtualFuncCall();
+
+	dynamicCall();
 
 	readKey();
 	return 0;
