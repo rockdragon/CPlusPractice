@@ -31,6 +31,9 @@
     <ClInclude Include="Vector_Container.h">
       <Filter>Sources</Filter>
     </ClInclude>
+    <ClInclude Include="Thing.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Headers">

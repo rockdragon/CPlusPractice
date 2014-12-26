@@ -3,6 +3,7 @@ using namespace std;
 #include "Vector_container.h"
 #include "List_container.h"
 #include "Child.h"
+#include "Thing.h"
 
 void use(Container &c) {
 	const int sz = c.size();
@@ -50,10 +51,24 @@ void dynamicCall(){
 	(dynamic_cast<Child&>(*b)).f();
 }
 
+void tryThing(){
+	Thing one(3);
+	one.init_by_cin();
+
+	cout << "move a thing." << endl;
+	
+	Thing another(one);
+	one[0] = 555;
+	another.out();
+
+	one.out();
+}
+
 int main() {
 	//virtualFuncCall();
+	//dynamicCall();
 
-	dynamicCall();
+	tryThing();
 
 	readKey();
 	return 0;
