@@ -28,13 +28,16 @@
     <ClInclude Include="List_container.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="Vector_Container.h">
-      <Filter>Sources</Filter>
-    </ClInclude>
     <ClInclude Include="Thing.h">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="Shape.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorOfT.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector_Container.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
