@@ -4,6 +4,7 @@ using namespace std;
 #include "List_container.h"
 #include "Child.h"
 #include "Thing.h"
+#include "Shape.h"
 
 void use(Container &c) {
 	const int sz = c.size();
@@ -67,6 +68,8 @@ void tryThing(){
 int main() {
 	//virtualFuncCall();
 	//dynamicCall();
+
+	//Shape s;
 
 	tryThing();
 

@@ -34,6 +34,9 @@
     <ClInclude Include="Thing.h">
       <Filter>Headers</Filter>
     </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Headers">
