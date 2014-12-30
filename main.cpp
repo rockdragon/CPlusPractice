@@ -5,6 +5,7 @@ using namespace std;
 #include "Child.h"
 #include "Thing.h"
 #include "Shape.h"
+#include "VectorOfT.h"
 
 void use(Container &c) {
 	const int sz = c.size();
@@ -65,13 +66,17 @@ void tryThing(){
 	one.out();
 }
 
+void genericTesting(){
+	VectorOfT<char> vc(100);
+	cout << vc.size() << endl;
+}
+
 int main() {
+	genericTesting();
 	//virtualFuncCall();
 	//dynamicCall();
-
 	//Shape s;
-
-	tryThing();
+	//tryThing();
 
 	readKey();
 	return 0;
