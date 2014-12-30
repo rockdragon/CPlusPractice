@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <string>
 using namespace std;
 #include "Vector_container.h"
 #include "List_container.h"
@@ -66,13 +67,9 @@ void tryThing(){
 	one.out();
 }
 
-void genericTesting(){
-	VectorOfT<char> vc(100);
-	cout << vc.size() << endl;
-}
-
 int main() {
-	genericTesting();
+	
+
 	//virtualFuncCall();
 	//dynamicCall();
 	//Shape s;

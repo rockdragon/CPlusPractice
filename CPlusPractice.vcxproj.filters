@@ -11,7 +11,9 @@
     <ClCompile Include="Container.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="VectorOfT.cpp" />
+    <ClCompile Include="VectorOfT.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base.h">
@@ -38,7 +40,9 @@
     <ClInclude Include="Vector_Container.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="VectorOfT.h" />
+    <ClInclude Include="VectorOfT.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Headers">
