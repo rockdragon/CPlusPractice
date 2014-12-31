@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <string>
+#include <memory>
 using namespace std;
 #include "Vector_container.h"
 #include "List_container.h"
@@ -68,7 +69,15 @@ void tryThing(){
 }
 
 int main() {
+	VectorOfT<int> c(10);
+	for (int i = 0; i != c.size(); i++)
+		c[i] = i;
 	
+	int sum = 0;
+	for (int i = 0; i != c.size(); i++)
+		sum += c[i];
+	cout << sum << endl;
+
 
 	//virtualFuncCall();
 	//dynamicCall();
