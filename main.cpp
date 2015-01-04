@@ -25,7 +25,7 @@ void f(){
 	use(l);
 }
 void readKey(){
-	int x;
+	int x;  
 	cin >> x;
 }
 
